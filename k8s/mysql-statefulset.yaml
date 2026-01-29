@@ -18,8 +18,8 @@ spec:
           image: mysql:8.0
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: password
+              value: rootpassword
             - name: MYSQL_DATABASE
-              value: weapon
+              value: classicmodels
           ports:
             - containerPort: 3306

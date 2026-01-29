@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pandas
+mysql-connector-python
+python-multipart
+pydantic
