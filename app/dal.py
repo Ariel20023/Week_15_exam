@@ -45,7 +45,7 @@ def get_customer_quantity_per_order():
             GROUP BY c.customerName;"""
 
 
-def get_customers_payments_by_lastname_pattern(pattern: str = "son"):
+def get_customers_payments_by_lastname_pattern():
     return """SELECT c.customerName ,e.firstName, SUM(p.amount) as sum_amount
             from customers as c
             LEFT JOIN employees as e
