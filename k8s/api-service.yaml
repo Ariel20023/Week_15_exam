@@ -1,10 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: weapon-api
+  name: api
 spec:
   selector:
-    app: weapon-api
+    app: api
   ports:
     - port: 80
       targetPort: 8080
+      nodePort: 30080
+
